@@ -1,11 +1,14 @@
-Você irá criar um novo comando da seguinte forma:
+No selenium IDE Você irá criar um novo comando dessa forma:
 
 command: execute script
-
 Target: return Math.floor(Math.random() * 10000)
-
 value: random_num
 
+Para utilizar a variável no local desejado, você pode chamar a variável da seguinte maneira:
+
+command: type
+Target: 'id_do_campo'
+value: ${random_num}
 
 OBS: esse script é para gerar até 4 digitos números inteiros randomico, caso queira mais, basta colocar mais 0
 
