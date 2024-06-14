@@ -1,0 +1,11 @@
+No selenium IDE Você irá criar um novo comando dessa forma:
+
+command: execute script
+Target: function getFormattedDate() {     let today = new Date();     let dd = String(today.getDate()).padStart(2, '0');     let mm = String(today.getMonth() + 1).padStart(2, '0');   let yyyy = today.getFullYear();      return dd + '/' + mm + '/' + yyyy; }  return getFormattedDate();
+value: data_atual
+
+Para utilizar a variável no local desejado, você pode chamar a variável da seguinte maneira:
+
+command: type
+Target: 'id_do_campo'
+value: ${data_atual}
